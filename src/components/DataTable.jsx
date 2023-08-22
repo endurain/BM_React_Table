@@ -6,6 +6,8 @@ const DataTable = ({ data }) => {
     const [sortOrder, setSortOrder] = useState('asc');
     const [sortColumn, setSortColumn] = useState('');
 
+    console.log(data);
+
     // handle the sorting logic when a column header is clicked
     const handleSort = (columnName) => {
         const isSameColumn = sortColumn === columnName;
@@ -42,9 +44,10 @@ const DataTable = ({ data }) => {
         return <th onClick={onClick}>{label}</th>;
     };
   
-    const DataRow = ({ data }) => {
+    const DataRow = ({ data, rowNumber }) => {
         return (
             <tr>
+                <td>{rowNumber}</td>
                 <td>{data.name}</td>
                 <td>{data.favoriteFood}</td>
                 <td>{data.favoriteColor}</td>
@@ -58,16 +61,17 @@ const DataTable = ({ data }) => {
     <table className="data-table">
       <thead>
         <tr>
-          <HeaderCell label={"Name"} onClick={() => handleSort('name')} />
-          <HeaderCell label={"Favorite Food"} onClick={() => handleSort('favoriteFood')} />
-          <HeaderCell label={"Favorite Color"} onClick={() => handleSort('favoriteColor')} />
-          <HeaderCell label={"Number Of Pets"} onClick={() => handleSort('numberOfPets')} />
-          <HeaderCell label={"Date of Birth"} onClick={() => handleSort('dob')} />
+            <HeaderCell label={"Row Number"} />
+            <HeaderCell label={"Name"} onClick={() => handleSort('name')} />
+            <HeaderCell label={"Favorite Food"} onClick={() => handleSort('favoriteFood')} />
+            <HeaderCell label={"Favorite Color"} onClick={() => handleSort('favoriteColor')} />
+            <HeaderCell label={"Number Of Pets"} onClick={() => handleSort('numberOfPets')} />
+            <HeaderCell label={"Date of Birth"} onClick={() => handleSort('dob')} />
         </tr>
       </thead>
       <tbody>
-        {sortedData.map((row) => (
-          <DataRow key={row.name} data={row} />
+        {sortedData.map((row, index) => (
+          <DataRow key={row.name} rowNumber={index + 1} data={row} />
         ))}
       </tbody>
     </table>

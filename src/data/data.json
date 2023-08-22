@@ -62,6 +62,41 @@
       "favoriteColor": "Pink",
       "numberOfPets": 7,
       "dob": "Friday, 2 April 1968"
+    },
+    {
+      "name": "Tom Arnold",
+      "favoriteFood": "Apples",
+      "favoriteColor": "Burnt Umber",
+      "numberOfPets": 0,
+      "dob": "Monday, 5 April 1908"
+    },
+    {
+      "name": "Justin Timberlake",
+      "favoriteFood": "Coq Au Vin",
+      "favoriteColor": "Blue",
+      "numberOfPets": 4,
+      "dob": "Monday, 23 July 1978"
+    },
+    {
+      "name": "Bill Burr",
+      "favoriteFood": "Ratatouille",
+      "favoriteColor": "Green",
+      "numberOfPets": 1,
+      "dob": "Sunday, 3 July 1958"
+    },
+    {
+      "name": "Cardi B",
+      "favoriteFood": "Escargots de Bourgogne",
+      "favoriteColor": "Green",
+      "numberOfPets": 5,
+      "dob": "Monday, 3 December 1985"
+    },
+    {
+      "name": "Jim Carrey",
+      "favoriteFood": "Baguette",
+      "favoriteColor": "Purple",
+      "numberOfPets": 9,
+      "dob": "Thursday, 9 March 1985"
     }
   ]
 }
