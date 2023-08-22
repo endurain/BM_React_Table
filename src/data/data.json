@@ -1,0 +1,67 @@
+{
+  "head": {
+    "name": "Name",
+    "favoriteFood": "Favorite Food",
+    "favoriteColor": "Favorite Color",
+    "numberOfPets": "Total # of Pets",
+    "dob": "Birthday"
+  },
+  "body": [
+    {
+      "name": "Barbara Lopez",
+      "favoriteFood": "Hamburger",
+      "favoriteColor": "White",
+      "numberOfPets": 3,
+      "dob": "Tuesday, 18 April 1991"
+    },
+    {
+      "name": "Isaac Robbins",
+      "favoriteFood": "Wonton soup",
+      "favoriteColor": "Yellow",
+      "numberOfPets": 3,
+      "dob": "Thursday, 31 August 1969"
+    },
+    {
+      "name": "Dorothy Reeves",
+      "favoriteFood": "Seaweed salad",
+      "favoriteColor": "Purple",
+      "numberOfPets": 3,
+      "dob": "Sunday, 17 December 1987"
+    },
+    {
+      "name": "Corey Ball",
+      "favoriteFood": "Sweet potato fries",
+      "favoriteColor": "Pink",
+      "numberOfPets": 4,
+      "dob": "Sunday, 24 December 2002"
+    },
+    {
+      "name": "Rosie Pena",
+      "favoriteFood": "Salmon avocado roll",
+      "favoriteColor": "Brown",
+      "numberOfPets": 2,
+      "dob": "Tuesday, 14 March 1963"
+    },
+    {
+      "name": "Linnie Benson",
+      "favoriteFood": "Sweet potato fries",
+      "favoriteColor": "Orange",
+      "numberOfPets": 2,
+      "dob": "Thursday, 05 January 1985"
+    },
+    {
+      "name": "Edwin Hines",
+      "favoriteFood": "Cheesy fiesta potatoes",
+      "favoriteColor": "Pink",
+      "numberOfPets": 2,
+      "dob": "Friday, 28 April 1998"
+    },
+    {
+      "name": "Tom Cruise",
+      "favoriteFood": "Fish and Eggs",
+      "favoriteColor": "Pink",
+      "numberOfPets": 7,
+      "dob": "Friday, 2 April 1968"
+    }
+  ]
+}
