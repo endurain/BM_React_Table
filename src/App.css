@@ -2,6 +2,7 @@
 /* colors */
 :root {
   --color-gray: #6b6c7a;
+  --color-dark-gray: #4d4e58;
   --color-dark-blue: #282c34;
   --color-white: #fff;
 }
@@ -30,7 +31,87 @@ html {
   font-size: calc(10px + 2vmin);
   color: var(--color-white);
 }
-.data-table {
+
+/* table styles */
+table {
   background: var(--color-gray);
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  max-width: 80vw;
+}
+table th:not(:first-child) {
+  cursor: pointer;
+  transition:ease-in-out .3s;
+}
+table th:not(:first-child):hover {
+  background-color: var(--color-dark-gray);
+  transition:ease-in-out .3s;
+}
+table td {
+  padding: .25rem;
+  text-align: center;
+  border: 1px solid #ccc;
 }
 
+table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    border: 0;
+    max-width: 100%;
+    padding: .5rem .75rem .5rem;
+  }
+  table thead tr {
+    display: flex;
+    justify-content: space-around;
+  }
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+    border-bottom: 9px solid black;
+    font-size: .75rem;
+  }
+
+  table tr th:first-child {
+    width: 0;
+  }
+  
+  table tr th:not(:first-child) {
+    border-left: 1px solid var(--color-white);
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    padding: 0.625em;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+
+  table td::before {
+   
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+ 
+  }
+  
+  
+}

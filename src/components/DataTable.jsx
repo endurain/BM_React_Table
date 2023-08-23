@@ -6,30 +6,29 @@ const DataTable = ({ data }) => {
     const [sortOrder, setSortOrder] = useState('asc');
     const [sortColumn, setSortColumn] = useState('');
 
-    console.log(data);
-
     // handle the sorting logic when a column header is clicked
     const handleSort = (columnName) => {
         const isSameColumn = sortColumn === columnName;
+        // determine sorting order
         const newSortOrder = isSameColumn ? (sortOrder === 'asc' ? 'desc' : 'asc') : 'asc';
         
         // updater functions
         setSortOrder(newSortOrder);
         setSortColumn(columnName);
-    
+  
+        // sorting callback
         const sorted = [...sortedData].sort((a, b) => {
             const aValue = a[columnName];
             const bValue = b[columnName];
-            console.log('a'+ a);
-            console.log('b' + b);
             
-            // Data column
+            // Date column
             if (columnName === 'dob') {
+                // convert into date objects
                 const aDate = new Date(aValue);
                 const bDate = new Date(bValue);
                 return (aDate - bDate) * (newSortOrder === 'asc' ? 1 : -1);
             }
-            // String (all other) columns
+            // String columns (sans date)
             if (typeof aValue === 'string') {
                 return aValue.localeCompare(bValue) * (newSortOrder === 'asc' ? 1 : -1);
             }
@@ -61,7 +60,7 @@ const DataTable = ({ data }) => {
     <table className="data-table">
       <thead>
         <tr>
-            <HeaderCell label={"Row Number"} />
+            <HeaderCell label={" "} />
             <HeaderCell label={"Name"} onClick={() => handleSort('name')} />
             <HeaderCell label={"Favorite Food"} onClick={() => handleSort('favoriteFood')} />
             <HeaderCell label={"Favorite Color"} onClick={() => handleSort('favoriteColor')} />

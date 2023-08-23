@@ -97,6 +97,55 @@
       "favoriteColor": "Purple",
       "numberOfPets": 9,
       "dob": "Thursday, 9 March 1985"
+    },
+    {
+      "name": "Diana Ross",
+      "favoriteFood": "Turkey Club",
+      "favoriteColor": "Indigo",
+      "numberOfPets": 4,
+      "dob": "Wednesday, 18 November 1965"
+    },
+    {
+      "name": "Drew Carrey",
+      "favoriteFood": "Cliff Bars",
+      "favoriteColor": "Violet",
+      "numberOfPets": 0,
+      "dob": "Tuesday, 22 January 1995"
+    },
+    {
+      "name": "Mary Von Tonder",
+      "favoriteFood": "Cereal",
+      "favoriteColor": "Red",
+      "numberOfPets": 0,
+      "dob": "Monday, 12 February 1970"
+    },
+    {
+      "name": "Abe Lincoln",
+      "favoriteFood": "Double Cheeseburger",
+      "favoriteColor": "Teal",
+      "numberOfPets": 1,
+      "dob": "Tuesday, 2 January 1809"
+    },
+    {
+      "name": "Jon Hamm",
+      "favoriteFood": "Roast Beef",
+      "favoriteColor": "Maroon",
+      "numberOfPets": 5,
+      "dob": "Thursday, 30 April 1989"
+    },
+    {
+      "name": "Harvey Specter",
+      "favoriteFood": "NY Strip",
+      "favoriteColor": "Lime Green",
+      "numberOfPets": 13,
+      "dob": "Thursday, 3 September 1889"
+    },
+    {
+      "name": "Mike Ross",
+      "favoriteFood": "Meatball sub",
+      "favoriteColor": "Crimson",
+      "numberOfPets": 1,
+      "dob": "Tuesday, 13 February 1902"
     }
   ]
 }
