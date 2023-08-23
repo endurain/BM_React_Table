@@ -32,7 +32,7 @@ const DataTable = ({ data }) => {
             if (typeof aValue === 'string') {
                 return aValue.localeCompare(bValue) * (newSortOrder === 'asc' ? 1 : -1);
             }
-        
+
             return (aValue - bValue) * (newSortOrder === 'asc' ? 1 : -1);
         });
     

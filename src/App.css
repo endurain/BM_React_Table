@@ -44,6 +44,9 @@ table {
   table-layout: fixed;
   max-width: 80vw;
 }
+table thead tr th {
+  padding: 0 1rem 0;
+}
 table th:not(:first-child) {
   cursor: pointer;
   transition:ease-in-out .3s;
@@ -65,7 +68,13 @@ table tr {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 800px) {
+@media (min-width:801px) and (max-width:990px) {
+  table tr {
+    font-size: .85rem;
+  }
+}
+
+@media (max-width: 800px) {
   table {
     border: 0;
     max-width: 100%;
@@ -84,6 +93,7 @@ table tr {
 
   table tr th:first-child {
     width: 0;
+    padding:0;
   }
   
   table tr th:not(:first-child) {
