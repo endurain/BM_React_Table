@@ -17,11 +17,6 @@ const DataTable = ({ data }) => {
     const endIndex          = startIndex + itemsPerPage;
     const displayedPageRows = sortedData.slice(startIndex, endIndex);
 
-    // Pagination control handlers
-    const goToPage = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
-
     const goToPreviousPage = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1);
@@ -89,7 +84,7 @@ const DataTable = ({ data }) => {
   return (
     <div>
       <table className="data-table">
-        <thead>
+        <thead className='data-table__head'>
           <tr>
               <HeaderCell label={" "} />
               <HeaderCell label={"Name"} onClick={() => handleSort('name')} />
