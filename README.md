@@ -1,3 +1,10 @@
+This project was a take home challenge. I didn't get the job, but sure learned a lot. The criteria were to hydrate a html table with React from a JSON file. The columns should toggle
+from ascending to decending (and vice versa) on click, and pagination should be included. Here's the final product:
+
+![React HTML Table](https://github.com/endurain/BM_React_Table/blob/main/image.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
