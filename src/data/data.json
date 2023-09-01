@@ -146,6 +146,13 @@
       "favoriteColor": "Crimson",
       "numberOfPets": 1,
       "dob": "Tuesday, 13 February 1902"
+    },
+    {
+      "name": "Sammy Sosa",
+      "favoriteFood": "Bacon & Eggs",
+      "favoriteColor": "Red",
+      "numberOfPets": 3,
+      "dob": "Tuesday, 19 February 1972"
     }
   ]
 }

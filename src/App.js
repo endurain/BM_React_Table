@@ -10,7 +10,7 @@ function App() {
         <h1>React Table</h1>
       </header>
       <div className="body">
-        <DataTable data={data.body} />
+        <DataTable data={data} />
       </div>
     </div>
   );
